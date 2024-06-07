@@ -1,0 +1,26 @@
+use restAPI
+switched to db restAPI
+show collections
+Collec
+products
+userDetails
+users
+db.Collec.find()
+db.Collec.aggregate([{$match:{salary:'5000'}])
+db.Collec.aggregate([{$match:{salary:5000}}])
+db.Collec.aggregate([{$group:{_id:'$gender'}}])
+db.Collec.aggregate([{$match:{salary:5000}},{$count:{"Total number of employees:5000"}}])
+db.Collec.find()
+db.collec.find({salary:{$eq:5000}})
+db.Collec.find({salary})
+db.Collec.find({salary:{$eq:5000}})
+db.Collec.find({salary:{$gt:5000}})
+db.Collec.find({salary:{$gte:5000}})
+db.Collec.find({salary:{$in:[5000,4000]}})
+db.Collec.find({salary:{$lt:5000}})
+db.Collec.find({salary:{$lte:5000}})
+db.Collec.find({salary:{$ne:5000}})
+db.Collec.find({$and:[{salary:{$lt:6000}},{gender:{$in:['male','female']}}]})
+db.Collec.find({salary:{$not:{$gt:5000}}})
+db.Collec.find({$or:[{salary:{$gt:10000}},{salary:{$lt:10000}}]})
+db.Collec.find({salary:{$exists:true,$in:[4000,5000]}})
